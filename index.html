@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="desktop-view hidden xl:block">
+        <!-- Navbar -->
+        <nav style="z-index: 999;" id="navbar"
+            class="w-screen relative z-90 sticky top-0 transition ease-in-out duration-200">
+            <div class="w-1/2 h-22 py-5 px-12 flex items-center justify-between">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        class="w-8 h-8 text-white p-2 bg-yellow-400 rounded-full" viewBox="0 0 24 24">
+                    </svg>
+                    <h1 class="text-2xl px-2"><span class="font-bold">Best</span>Food</h1>
+                </div>
+                <div>
+                    <ul class="flex">
+                        <li class="px-6 font-bold text-sm text-gray-600"><a href="#about">How it works</a></li>
+                        <li class="px-6 font-bold text-sm text-gray-600"><a href="#services">Services</a></li>
+                        <li class="px-6 font-bold text-sm text-gray-600"><a href="#">Pricing</a></li>
+                        <li class="px-6 font-bold text-sm text-gray-600"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+        <!-- Landing page -->
+        <!-- Right Image -->
+        <div data-aos="fade-left" class="absolute z-80 right-12 top-12">
+            <div style="width: 25vw;"
+                class="card absolute right-56 top-8 bg-gray-100 h-20 text-black rounded-lg z-20 shadow-lg flex z-20">
+                <img src="./Assets/food_plate.png" alt="Food plate" class="rounded-full h-22 relative -top-6 left-4">
+                <img src="./Assets/check.png" alt="Check"
+                    class="absolute bg-blue-400 p-2 w-8 left-16 top-8 rounded-full flex items-center justify-center">
+                <div class="flex items-center justify-between relative left-12 w-48">
+                    <div>
+                        <p class="font-bold">Mexican Tacos</p>
+                        <p class="text-gray-500 text-sm pt-1">Payment Received</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-gray-600 text-2xl">
+                            $5
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./Assets/family-cooking-breakfast-together-home.jpg" alt="Kid Cooking"
+                class="rounded-full h-96 relative -top-12">
+        </div>
+        <!-- Right Image -->
+
+        <!-- Left Image -->
+        <div data-aos="fade-right" class="absolute left-12 -bottom-10">
+            <div
+                class="card2 relative left-48 top-40 bg-yellow-400 w-max text-white rounded-r-full rounded-tl-full z-20 shadow-lg">
+                <p class="py-3 px-12">It's Delicious!</p>
+            </div>
+            <img src="./Assets/enjoy_food.jpg" alt="Cooking Lady" class="rounded-full h-96 relative -bottom-10">
+        </div>
+        <!-- Left Image -->
+
+        <!-- Main text -->
+        <main data-aos="zoom-in-up" data-aos-duration="2000"
+            class="w-full h-screen flex flex-col justify-center items-center">
+            <h1 class="text-center text-7xl font-bold text-gray-700">Helps You To<br>Grow Your<br>Food Business</h1>
+            <p class="w-96 py-8 text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do
+                eiusmod
+                tempor incididunt
+                ut
+                labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis
+            </p>
+            <div style="width: 50vw;"
+                class="inline-flex items-center justify-between bg-white leading-none rounded-full p-4 shadow-xl text-teal text-sm z-20">
+                <div class="flex flex-col">
+                    <span class="inline-flex px-2 text-sm text-gray-400">
+                        Your email address
+                    </span>
+                    <span class="inline-flex px-2 text-gray-800 text-lg font-bold">
+                        antonio@mail.com
+                    </span>
+                </div>
+                <span
+                    class="inline-flex bg-gray-600 text-white rounded-full h-full w-max px-6 justify-center items-center cursor-pointer hover:bg-gray-800 transition ease-in duration-200">
+                    Get Started
+                </span>
+            </div>
+        </main>
+        <!-- Main text -->
+        <!-- LandingPage -->
+
+        <!-- About us -->
+        <div id="about"
+            class="max-w-screen-xl p-4 bg-white dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative py-26 lg:mt-20 h-screen flex justify-center items-center">
+            <div class="relative">
+                <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+                    <div data-aos="fade-left" data-aos-duration="1000" class="lg:col-start-2 lg:max-w-2xl ml-auto">
+                        <p class="text-base leading-6 text-yellow-400 font-semibold uppercase">
+                            How It Works
+                        </p>
+                        <h4
+                            class="mt-2 text-2xl leading-8 font-extrabold text-gray-700 dark:text-white sm:text-3xl sm:leading-9">
+                            We are the key between business and customers!
+                        </h4>
+                        <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+                            Build a simply and powered collaborative space for all your team. Track, share, measure, you
+                            have a fully control, it&#x27;s never be simply and efficient.
+                        </p>
+                        <ul class="mt-8 md:grid md:grid-cols-2 gap-6">
+                            <li class="mt-6 lg:mt-0">
+                                <div class="flex">
+                                    <span
+                                        class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                                        Live modifications
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="mt-6 lg:mt-0">
+                                <div class="flex">
+                                    <span
+                                        class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                                        Data tracker
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="mt-6 lg:mt-0">
+                                <div class="flex">
+                                    <span
+                                        class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                                        24/7 support
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="mt-6 lg:mt-0">
+                                <div class="flex">
+                                    <span
+                                        class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                                        Free tips to improve work time
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
+                        <div class="relative space-y-4">
+                            <div class="flex items-end justify-center lg:justify-start space-x-4">
+                                <img data-aos="fade-down-right" class="rounded-lg shadow-lg w-32 md:w-56" width="200"
+                                    src="./Assets/cooking_lady.jpg" alt="1" />
+                                <img data-aos="fade-down-left" class="rounded-lg shadow-lg w-40 md:w-64" width="260"
+                                    src="/Assets/eating-plate.jpg" alt="2" />
+                            </div>
+                            <div class="flex items-start justify-center lg:justify-start space-x-4 ml-12">
+                                <img data-aos="fade-up-right" class="rounded-lg shadow-lg w-24 md:w-56" width="170"
+                                    src="./Assets/food_business.jpg" alt="3" />
+                                <img data-aos="fade-up-left" class="rounded-lg shadow-lg w-32 md:w-56" width="200"
+                                    src="./Assets/happy_man.jpg" alt="4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About us -->
+
+        <!-- Our Services -->
+        <div id="services" class="container mx-auto px-6 p-6 bg-white dark:bg-gray-800 h-screen">
+            <div class="mb-16 text-center">
+                <h2 class="text-base text-yellow-400 font-semibold tracking-wide uppercase">
+                    Features
+                </h2>
+                <p
+                    class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-700 dark:text-white sm:text-4xl">
+                    Why you should choose for us
+                </p>
+            </div>
+            <div class="flex flex-wrap my-12 dark:text-white">
+                <div data-aos="fade-down-right" class="w-full border-b md:w-1/2 md:border-r lg:w-1/3 p-8">
+                    <div class="flex items-center mb-6">
+                        <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-yellow-500"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                            </path>
+                        </svg>
+                        <div class="ml-4 text-xl">
+                            Increase sales
+                        </div>
+                    </div>
+                    <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
+                        Receive more sales by selling across multple sales channels instead of just having a single
+                        point of
+                        entry.
+                    </p>
+                </div>
+                <div data-aos="fade-down" class="w-full border-b md:w-1/2 lg:w-1/3 lg:border-r p-8">
+                    <div class="flex items-center mb-6">
+                        <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-yellow-500"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                            </path>
+                        </svg>
+                        <div class="ml-4 text-xl">
+                            Overlays
+                        </div>
+                    </div>
+                    <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
+                        Apply beautiful overlays to every product image distributed through our platform. A visual
+                        touch.
+                    </p>
+                </div>
+                <div data-aos="fade-down-left" class="w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8">
+                    <div class="flex items-center mb-6">
+                        <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-yellow-500"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                            </path>
+                        </svg>
+                        <div class="ml-4 text-xl">
+                            Control
+                        </div>
+                    </div>
+                    <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
+                        Apply filters and control which products to sell on each sales channel. E.g. exclude products
+                        with
+                        low margins.
+                    </p>
+                </div>
+                <div data-aos="fade-up-right" class="w-full border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 p-8">
+                    <div class="flex items-center mb-6">
+                        <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-yellow-500"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                            </path>
+                        </svg>
+                        <div class="ml-4 text-xl">
+                            Mapping
+                        </div>
+                    </div>
+                    <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
+                        Map product categories with each sales channels&#x27; own categories and achieve better results
+                        and
+                        lower costs.
+                    </p>
+                </div>
+                <div data-aos="fade-up"
+                    class="w-full border-b md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8">
+                    <div class="flex items-center mb-6">
+                        <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-yellow-500"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                            </path>
+                        </svg>
+                        <div class="ml-4 text-xl">
+                            Fill the missing
+                        </div>
+                    </div>
+                    <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
+                        Modify products with extra properties and achieve the maximum output for each installed sales
+                        channel.
+                    </p>
+                </div>
+                <div data-aos="fade-up-left" class="w-full md:w-1/2 lg:w-1/3 p-8">
+                    <div class="flex items-center mb-6">
+                        <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-yellow-500"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
+                            </path>
+                        </svg>
+                        <div class="ml-4 text-xl">
+                            Dynamic Texts
+                        </div>
+                    </div>
+                    <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
+                        Build unique product titles and descriptions instead of spending days manually editing each
+                        product.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Our Services -->
+
+        <!-- Pricing -->
+        <div data-aos="flip-left" data-aos-duration="1000"
+            class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-center justify-center">
+            <div class="pricing-box max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
+                <div class="bg-white dark:bg-gray-800 px-6 py-8 lg:flex-shrink-1 lg:p-12">
+                    <h3
+                        class="text-2xl leading-8 font-extrabold text-gray-700 sm:text-3xl sm:leading-9 dark:text-white">
+                        Link your business to BestFood today!
+                    </h3>
+                    <p class="mt-6 text-base leading-6 text-gray-500 dark:text-gray-200">
+                        Start selling online for free with all the features you need to launch your local delivery and
+                        pick-up service, nothing more. We don&#x27;t charge commission or monthly fees, keep all your
+                        margin.
+                    </p>
+                    <div class="mt-8">
+                        <div class="flex items-center">
+                            <h4
+                                class="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-yellow-400">
+                                What you receive
+                            </h4>
+                            <div class="flex-1 border-t-2 border-gray-200">
+                            </div>
+                        </div>
+                        <ul class="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
+                            <li class="flex items-start lg:col-span-1">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6"
+                                        stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                                        <path
+                                            d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                                    All illimited components
+                                </p>
+                            </li>
+                            <li class="flex items-start lg:col-span-1">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6"
+                                        stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                                        <path
+                                            d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                                    Own custom Tailwind styles
+                                </p>
+                            </li>
+                            <li class="flex items-start lg:col-span-1">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6"
+                                        stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                                        <path
+                                            d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                                    Unlimited Templates
+                                </p>
+                            </li>
+                            <li class="flex items-start lg:col-span-1">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6"
+                                        stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                                        <path
+                                            d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                                    Free premium dashboard
+                                </p>
+                            </li>
+                            <li class="flex items-start lg:col-span-1">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6"
+                                        stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                                        <path
+                                            d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                                    Best ranking
+                                </p>
+                            </li>
+                            <li class="flex items-start lg:col-span-1">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6"
+                                        stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                                        <path
+                                            d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                                    Prenium svg
+                                </p>
+                            </li>
+                            <li class="flex items-start lg:col-span-1">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6"
+                                        stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                                        <path
+                                            d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                                    My wife
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="py-8 px-6 text-center bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+                    <p class="text-lg leading-6 font-bold text-gray-900 dark:text-white">
+                        Premium
+                    </p>
+                    <div
+                        class="mt-4 flex items-center justify-center text-5xl leading-none font-extrabold text-gray-700 dark:text-white">
+                        <span>
+                            $99/mo
+                        </span>
+                    </div>
+                    <p class="mt-4 text-sm leading-5">
+                        <span class="block font-medium text-gray-500 dark:text-gray-400">
+                            Card payments:
+                        </span>
+                        <span class=" inline-block font-medium text-gray-500 dark:text-gray-400">
+                            2.9% + 20p per transaction
+                        </span>
+                    </p>
+                    <div class="mt-6">
+                        <div class="rounded-md shadow">
+                            <button type="button"
+                                class="py-2 px-4  bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-500 focus:ring-offset-yellow-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                Link your business
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing -->
+
+        <!-- Contact us -->
+        <section data-aos="zoom-in-up" class="text-gray-600 body-font relative">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Still have some
+                        questions?
+                    </h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon
+                        brooklyn
+                        asymmetrical gentrify.</p>
+                </div>
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                                <textarea id="message" name="message"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button
+                                class="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">Send
+                                message</button>
+                        </div>
+                        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                            <a class="text-yellow-500">antonio@email.com</a>
+                            <p class="leading-normal my-5">49 Smith St.
+                                <br>Saint Cloud, MN 56301
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact us -->
+
+        <!-- Footer -->
+        <footer class="text-gray-600 body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+                    </svg>
+                    <span class="text-1xl px-2"><span class="font-bold">Best</span>Food</span>
+                </a>
+                <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                    2021 Antonio Skopin —
+                    <a href="https://instagram.com/webdev.antonio" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                        target="_blank">@webdev.antonio</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <script>
+        $(function () {
+            AOS.init();
+        });
+    </script>
+</body>
+
+</html>
